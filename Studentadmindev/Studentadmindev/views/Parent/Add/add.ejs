@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="/views/addclass/addclass.css">
+</head>
+<body>
+    <div class="bodyWrapper">
+    <div class="leftBody">
+        
+            <a href="/admin">
+        <div class="adminshow">
+            <div class="avatar">
+            </div>
+            <div>
+                Admin page
+            </div>
+        </div>
+    </a>
+        
+        <hr></hr>
+        <div class="function">
+            <a href="/admin/classadmin">
+                Classes
+            </a>
+        </div>
+        <div class="function">
+            <a href="/admin/teacher">
+            Teacher
+            </a>
+            
+    </div>
+    <div class="function">
+        <a href="/admin/student">
+        Student
+        </a>
+    </div>
+    <div class="function">
+        <a href="/admin/parent">
+        Parent
+        </a>
+    </div>
+</div>
+        <div class="rightBody">
+            <div class="addclass-form-title">
+                <h1>
+                    Fill all fields to add parent
+                </h1>
+            </div>
+            <form class="addform" action="/admin/parent/create" method="post" >
+            <div class="addclass-form">
+                <input name="parent_id" type="text" placeholder="parentId"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="father_name" type="text" placeholder="father name"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="mother_name" placeholder="mother name"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="father_phone" placeholder="father phone"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="mother_phone" placeholder="mother phone"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="account_login" placeholder="account-login"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="password_login" placeholder="password-login"></input>
+            </div>
+
+            <input class="addclass-form-submit" type="submit"></input>
+            </form>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,59 @@
+.bodyWrapper {
+    /*background-color: red;*/
+    background-image: url(../../access/background.png);
+    display: flex;
+    height: 100vh;
+
+}
+.leftBody{
+    width: 20%;
+    background-color: aqua;
+
+}
+.adminshow{
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.function{
+    height: 5vh;
+    text-align: center;
+    padding-top: 5%;
+
+}
+.function:hover{
+    background-color: aquamarine;
+}
+.rightBody{
+    width: 80%;
+}
+.avatar{
+    width: 60%;
+    height: 60%;
+    background-image: url("../../access/teacher-3.jfif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 7%;
+}
+.admin-seedschool-title {
+    color: crimson;
+    font-weight: 100;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 15px;
+}
+.admin-seedschool-image {
+    text-align: center;
+    padding-top: 10px;
+}
+.admin-seedschool-description {
+    font-family: cursive;
+    color: rgb(101, 108, 5);
+    font-size: larger;
+    padding-top: 20px;
+    padding-left: 20px;
+}

@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/views/classview/classview.css">
+    </head>
+    <script>
+        const deleteHandler = async(class_id)=>{
+            const data = {
+                class_id: class_id
+            }
+            
+        }
+    </script>
+    <body>
+        <div class="bodyWrapper">
+        <div class="leftBody">
+            
+                <a href="/admin">
+            <div class="adminshow">
+                <div class="avatar">
+                </div>
+                <div>
+                    Admin page
+                </div>
+            </div>
+        </a>
+            <hr></hr>
+
+            <div class="function">
+                
+                <a href="/admin/classadmin">
+                    Classes
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/teacher">
+                    Teacher
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/student">
+                Student
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/parent">
+                Parent
+                </a>
+            </div>
+        </div>
+        <div class="rightBody">
+        
+            <table>
+               <tr>
+                        <th>
+                            Class ID
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Teacher ID
+                        </th>
+                        <th>
+                            Delete
+                        </th>
+                        <th>
+                            Edit
+                        </th>
+                    </tr>
+
+                <% 
+                classes.forEach((entry)=> { %>
+                    <tr>                       
+                        <td>
+                            <%= entry.class_id %>
+                        </td>
+                        <td>
+                            <%= entry.name %>
+                        </td>
+                        <td>
+                            <%=entry.teacher_id %>
+                        </td>
+                        <td>
+                            <form method="post" action="/admin/deleteClass">
+                                <input name="class_id" value='<%= entry.class_id %>' hidden>
+                                <input type="submit" value="Xoa">
+                            </form>
+                           
+                        </td>
+                        <td>
+                            <a href="/admin/editClass/<%= entry.class_id%>"><button  >Edit</button></a>                     
+                        </td>
+                    </tr>
+                    <% }) 
+                 %>
+            </table>
+        </div>
+        </div>
+    </body>
+
+</html>

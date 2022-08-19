@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/views/classadminpage/classadminpage.css">
+    </head>
+    <link rel="stylesheet" href="/views/classadminpage/popupS.css">
+    <script src="/views/classadminpage/popupS.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(location.search);
+
+        const validated = urlParams.has('validate')
+    </script>
+    <script>
+        if(validated)
+        popupS.alert({
+            content: 'Create fail please check Teacher ID and try again'
+        });
+    </script>
+    <body>
+        <div class="bodyWrapper">
+        <div class="leftBody">
+            
+            <a href="/admin/student">
+                <div class="adminshow">
+                    <div class="avatar">
+                    </div>
+                    <div>
+                        Admin page
+                    </div>
+                </div>
+            </a>
+            <hr></hr>
+            <div class="function">
+                <a href="/admin/classadmin">
+                    Classes
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/teacher">
+                    Teacher
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/student">
+                Student
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/parent">
+                Parent
+                </a>
+            </div>
+        </div>
+        <div class="rightBody">
+            <div class="buttonfunction">
+                <a href="/admin/parent/create">
+                    Add
+                </a>
+            </div>
+            <div class="buttonfunction">
+                <a href="/admin/parent/View">
+                    View
+                </a>
+                
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>

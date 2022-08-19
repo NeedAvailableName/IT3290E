@@ -1,0 +1,81 @@
+.bodyWrapper {
+    /*background-color: red;*/
+    display: flex;
+    min-height: 100vh;
+}
+.leftBody{
+    width: 20%;
+    background-color: aqua;
+
+}
+.adminshow{
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.function{
+    height: 5vh;
+    text-align: center;
+    padding-top: 5%;
+
+}
+.function:hover{
+    background-color: aquamarine;
+}
+.rightBody{
+    width: 80%;
+    background-image: url(../../access/background.png);
+}
+.avatar{
+    width: 60%;
+    height: 60%;
+    background-image: url(../../access/teacher-3.jfif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 7%;
+}
+.addform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+.addclass-form-title {
+    font-family: cursive;
+    color: crimson;
+    padding-top: 10px;
+    text-align: center;
+}
+.addclass-form-classname input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.addclass-form-classid input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.addclass-form-teacherid input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.addclass-form input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.addclass-form-submit {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.addclass-form-image {
+    padding-top: 20px;
+    text-align: center;
+}

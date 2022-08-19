@@ -1,0 +1,42 @@
+.bodyWrapper {
+    background-color: red;
+    display: flex;
+    height: 100vh;
+
+}
+.leftBody{
+    width: 20%;
+    background-color: aqua;
+
+}
+.adminshow{
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.function{
+    height: 5vh;
+    text-align: center;
+    padding-top: 5%;
+
+}
+.function:hover{
+    background-color: aquamarine;
+}
+.rightBody{
+    display: flex;
+    flex-direction: column;
+
+}
+.avatar{
+    width: 60%;
+    height: 60%;
+    background-image: url("/access/img_avatar3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 7%;
+}

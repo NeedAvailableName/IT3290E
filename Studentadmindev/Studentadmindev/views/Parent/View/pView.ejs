@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/views/classview/classview.css">
+    </head>
+    <script src = "edit.js"> </script>
+    <body>
+        <div class="bodyWrapper">   
+        <div class="leftBody">
+            
+                <a href="/admin">
+            <div class="adminshow">
+                <div class="avatar">
+                </div>
+                <div>
+                    Admin page
+                </div>
+            </div>
+        </a>
+            <hr></hr>
+
+            <div class="function">
+                
+                <a href="/admin/classadmin">
+                    Classes
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/teacher">
+                    Teacher
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/student">
+                Student
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/parent">
+                Parent
+                </a>
+            </div>
+        </div>
+        <div class="rightBody">
+            <div class="mainTable">
+                <h1>Data</h1>
+                <table id="table">
+                    
+                    <tr>
+                        <th>Parent ID</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                        <th>Father Phone</th>
+                        <th>Mother Phone</th>
+                        <th>Account</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                    </tr>
+                    <% 
+                parent.forEach((entry)=> { %>
+                    <tr>
+                        
+                        <td>
+                            <%= entry.parent_id %>
+                        </td>
+                        <td>
+                            <%= entry.father_name %>
+                        </td>
+                        <td>
+                            <%=entry.mother_name %>
+                        </td>
+                        <td>
+                            <%=entry.father_phone %>
+                        </td>
+                        <td>
+                            <%=entry.mother_phone %>
+                        </td>
+                        <td>
+                            <%=entry.account_login %>
+                        </td>
+                        <td>
+                            <%=entry.password_login %>
+                        </td>
+                        <td>
+                            <form method="post" action="/admin/deleteParent">
+                                <input name="parent_id" value='<%= entry.parent_id %>' hidden>
+                                <input type="submit" value="Delete">
+                            </form>
+                        </td>
+                        <td>
+                            <button  onclick="editTableDisplay()" >Edit</button>
+                           
+                        </td>
+                    </tr>
+                    <% }) 
+                 %>
+            </table>
+        
+            <div class="updateBtn">
+                <button  onclick="editTableDisplay()">Update data</button>
+            </div>
+    
+            <!-- Edit table
+            <div class="editTable">
+                <div class="left">First Name: </div><div class="right"><input type="text" name="fname" id="fname"></div><br><br>
+                <div class="left">Last Name: </div><div class="right"><input type="text" name="lname" id="lname"></div><br><br>
+                <div class="left">Country: </div><div class="right"><input type="text" name="country" id="country"></div><br><br>
+                <div class="left">Mobile number: </div><div class="right"><input type="number" name="mNumber" id="mNumber"></div><br><br>
+                <button onclick="editRow();" class="editRowBtn">Update</button><br><br>
+            </div>        
+        -->
+        </div>
+        </div>
+        
+        
+    </body>
+
+</html>

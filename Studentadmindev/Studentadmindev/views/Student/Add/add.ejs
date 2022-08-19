@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/views/addclass/addclass.css">
+    </head>
+    <body>
+        <div class="bodyWrapper">
+        <div class="leftBody">
+            
+                <a href="/admin">
+            <div class="adminshow">
+                <div class="avatar">
+                </div>
+                <div>
+                    Admin page
+                </div>
+            </div>
+        </a>
+            
+            <hr></hr>
+            <div class="function">
+                
+                <a href="/admin/classadmin">
+                    Classes
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/teacher">
+                    Teacher
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/student">
+                Student
+                </a>
+            </div>
+            <div class="function">
+                <a href="/admin/parent">
+                Parent
+                </a>
+            </div>
+                
+        </div>
+    
+        <div class="rightBody">
+            <div class="addclass-form-title">
+                <h1>
+                    Fill all fields to add student
+                </h1>
+            </div>
+            <form class="addform" action="/admin/student/create" method="post" >
+            <div class="addclass-form">
+                <input name="student_id" type="text" placeholder="studentId"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="full_name" type="text" placeholder="full name"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="gender" placeholder="gender"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="adderss" placeholder="address"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="parent_id" placeholder="parentId"></input>
+            </div>
+            <div class="addclass-form">
+                <input name="class_id" placeholder="classId"></input>
+            </div>
+            <input class="addclass-form-submit" type="submit"></input>
+            </form>
+        </div>
+    </div>
+    
+    
+
+        
+    </body>
+
+</html>
