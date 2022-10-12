@@ -8,7 +8,7 @@ var Student={
 		return db.query("Select * from Students where Id=?",[id],callback);
 	},
 	addStudent:function(student,callback){
-		return db.query("Insert into Students(student_id,full_name,gender,adderss,parent_id,class_id) values(?,?,?,?,?,?)",[student.student_id,student.full_name,student.gender,student.adderss,student.parent_id,student.class_id],callback);
+		return db.query("Insert into Students(student_id,full_name,gender,address,parent_id,class_id) values(?,?,?,?,?,?)",[student.student_id,student.full_name,student.gender,student.adderss,student.parent_id,student.class_id],callback);
 	},
 	deleteStudent:function(student_id,callback){
 		return db.query("delete from Students where student_id=?",[student_id],callback);

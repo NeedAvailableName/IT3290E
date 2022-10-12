@@ -124,7 +124,7 @@ router.post('/student/create',(req,res)=>{
         student_id:req.body.student_id,
         full_name:req.body.full_name,
         gender:req.body.gender,
-        adderss:req.body.adderss,
+        address:req.body.address,
         parent_id:req.body.parent_id,
         class_id:req.body.class_id
     }

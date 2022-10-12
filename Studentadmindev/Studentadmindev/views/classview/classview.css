@@ -3,7 +3,8 @@
     background-repeat: repeat;
     /*background-color: red;*/
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+
 }
 .leftBody{
     width: 20%;
